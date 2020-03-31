@@ -1,0 +1,37 @@
+version: "2"
+
+services:
+
+  counter:
+    image: cs16ds/server:latest
+    container_name: counter
+    environment:
+           - MAXPLAYERS=32
+           - START_MAP=de_dust2
+           - SERVER_NAME="ezeq"
+           - START_MONEY=16000
+           - BUY_TIME=0.25
+           - FRIENDLY_FIRE=1
+           - ADMIN_STEAM=0:1:1234566
+    restart: always
+    ports:
+       - "26900:26900/udp"
+       - "27020:27020/udp"
+       - "27015:27015/udp"
+       - "27015:27015/tcp"
+       - "443:443/tcp"
+#tambien probe esta configuracion asignandole otra ip, pero no funco
+#cuando hago un nmap me dice que los puertos no estan abiertos.
+#    networks:
+#      lan:
+#        ipv4_address: 192.168.100.90
+#networks:
+#  lan:
+#    driver: macvlan
+#    driver_opts:
+#      parent: wlo1
+#    ipam:
+#      config:
+#        - subnet: "192.168.100.0/24"
+#          gateway: "192.168.100.1"
+

@@ -1,0 +1,68 @@
+root /home/johnc/docker $ docker logs 8a8990aeff21                                                                                                                                           
++ CONFIG_FILE=/opt/hlds/startup.cfg                                                                                                                                                          
++ '[' -r /opt/hlds/startup.cfg ']'                                                                                                                                                           
++ EXTRA_OPTIONS=("$@")                                                                                                                                                                       
++ EXECUTABLE=/opt/hlds/hlds_run                                                                                                                                                              
++ GAME=cstrike                                                                                                                                                                               
++ MAXPLAYERS=32                                                                                                                                                                              
++ START_MAP=de_dust2                                                                                                                                                                         
++ SERVER_NAME='"ezeq"'                                                                                                                                                                       
++ START_MONEY=16000                                                                                                                                                                          
++ BUY_TIME=0.25                                                                                                                                                                              
++ FRIENDLY_FIRE=1                                                                                                                                                                            
++ OPTIONS=("-game" "${GAME}" "+maxplayers" "${MAXPLAYERS}" "+map" "${START_MAP}" "+hostname" "\"${SERVER_NAME}\"" "+mp_startmoney" "${START_MONEY}" "+mp_friendlyfire" "${FRIENDLY_FIRE}" "+mp_buytime" "${BUY_TIME}")                                                                                                                                                                    
++ '[' -z '' ']'                                                                                                                                                                              
++ OPTIONS+=('-norestart')                                                                                                                                                                    
++ '[' -n '' ']'                                                                                                                                                                              
++ '[' -n '' ']'                                                                                                                                                                              
++ '[' -n 0:1:1234566 ']'                                                                                                                                                                     
++ echo '"STEAM_0:1:1234566" ""  "abcdefghijklmnopqrstu" "ce"'                                                                                                                                
++ set                                                                                                                                                                                        
++ exec /opt/hlds/hlds_run -game cstrike +maxplayers 32 +map de_dust2 +hostname '""ezeq""' +mp_startmoney 16000 +mp_friendlyfire 1 +mp_buytime 0.25 -norestart                                
+
+Console initialized.                                                                                                                                                                         
+Using breakpad crash handler                                                                                                                                                                 
+Setting breakpad minidump AppID = 10                                                                                                                                                         
+Forcing breakpad minidump interfaces to load                                                                                                                                                 
+Looking up breakpad interfaces from steamclient                                                                                                                                              
+Calling BreakpadMiniDumpSystemInit                                                                                                                                                           
+Protocol version 48                                                                                                                                                                          
+Exe version 1.1.2.7/Stdio (cstrike)                                                                                                                                                          
+Exe build: 14:13:30 Jul  5 2017 (7559)                                                                                                                                                       
+STEAM Auth Server                                                                                                                                                                            
+Server IP address 172.18.0.2:27015                                                                                                                                                           
+                                                                                                                                                                                             
+   Metamod version 1.20  Copyright (c) 2001-2013 Will Day <willday@metamod.org>                                                                                                              
+   Metamod comes with ABSOLUTELY NO WARRANTY; for details type `meta gpl'.                                                                                                                   
+   This is free software, and you are welcome to redistribute it                                                                                                                             
+   under certain conditions; type `meta gpl' for details.                                                                                                                                    
+                                                                                                                                                                                             
+
+   AMX Mod X version 1.8.2 Copyright (c) 2004-2006 AMX Mod X Development Team                                                                                                                
+   AMX Mod X comes with ABSOLUTELY NO WARRANTY; for details type `amxx gpl'.                                                                                                                 
+   This is free software and you are welcome to redistribute it under                                                                                                                        
+   certain conditions; type 'amxx gpl' for details.                                                                                                                                          
+                                                                                                                                                                                             
+Version 0.9.534 Linux
+[DPROTO]: Done.
+L 03/31/2020 - 05:29:29: -------- Mapchange to de_dust2 --------
+[AMXX] Loaded 2 admins from file
+[S_API FAIL] SteamAPI_Init() failed; SteamAPI_IsSteamRunning() failed.
+Looking up breakpad interfaces from steamclient
+Calling BreakpadMiniDumpSystemInit
+
+Executing AMX Mod X Configuration File 
+Scrolling message displaying frequency: 10:00 minutes
+maxplayers cannot be changed while a server is running.
+Server logging data to file logs/L0331000.log
+L 03/31/2020 - 05:29:36: Log file started (file "logs/L0331000.log") (game "cstrike") (version "48/1.1.2.7/Stdio/7559")
+L 03/31/2020 - 05:29:36: Server cvar "pausable" = "1"
+L 03/31/2020 - 05:29:36: Server cvar "sv_aim" = "0"
+L 03/31/2020 - 05:29:36: Server cvar "sv_allowupload" = "0"
+L 03/31/2020 - 05:29:36: Server cvar "sv_maxrate" = "25000"
+L 03/31/2020 - 05:29:36: Server cvar "sv_minrate" = "2500"
+L 03/31/2020 - 05:29:36: Server cvar "sv_maxspeed" = "320"
+L 03/31/2020 - 05:29:36: Server cvar "sv_proxies" = "2"
+Menu item 17 added to Menus Front-End: "Plugin Cvars" from plugin "pluginmenu.amxx"
+Menu item 18 added to Menus Front-End: "Plugin Commands" from plugin "pluginmenu.amxx"
+L 03/31/2020 - 05:29:43: World triggered "Round_Start"
