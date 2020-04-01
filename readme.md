@@ -8,3 +8,8 @@ Buenas Amigos, estoy teniendo problemas con un servicio de counter strike
 6) probe cambiando la configuracion de red del contenedor con un macvlan, pero no funciona.
 
 
+[Fixed]
+
+Todo funciona ok, pero el servidor solo funciona para steam - yo utilizaba cliente no steam.
+
+Saludos
